@@ -1,0 +1,10 @@
+@(widgets: Vector[models.Widget])
+ 
+<!DOCTYPE html>
+<html>
+    <body>
+        @widgets.map { widget => 
+            Widget @widget.id = @widget.name</br>
+        }
+    </body>
+</html>
